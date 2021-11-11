@@ -1,0 +1,108 @@
+.products__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-gap: 45px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 30px auto;
+  }
+  
+  .products__element {
+    box-shadow: 5px 5px 15px rgb(0, 16, 27);
+    border-radius: 20px;
+    background: var(--main-catalog-bg);
+    padding-bottom: 5px;
+    transition: .3s all ease-in-out;
+  }
+  .products__element:hover {
+    transform: translateY(2px);
+  }
+  
+  
+  .products__element--img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: contain;
+  }
+  
+  .products__element--name {
+    font-family: var(--main-fonts-hind) !important;
+    color: var(--main-body-bg);
+    font-size: 1em;
+    padding-left: 10px;
+    font-weight: bold;
+    line-height: 4.3vh;
+    margin-bottom: 22.587857pt;
+    margin-left: 3.764643pt;
+  }
+  
+  .products__element--footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 7.529286pt;
+    align-items: center;
+  }
+  
+  .products__element--price {
+    color: var(--main-body-bg);
+    font-weight: 600;
+    padding-right: 7.529286pt;
+  }
+  
+  .products__element--btn {
+    color: var(--color-main-text);
+    background: var(--main-btn-bg);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    height: 32px;
+    display: flex;
+    padding: 0 10px;
+    margin-bottom: 5px;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .products__element--btn-active {
+  background: #808080;
+  color: rgb(255, 255, 255);
+
+  }
+
+  @media all and (max-width: 380px) {
+    .products__element--btn {
+      width: 200px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      height: 40px ;
+    }
+    .products__element {
+      box-shadow: 5px 5px 20px rgb(0, 0, 0);
+      border-radius: 20px;
+      background: var(--main-catalog-bg);
+      padding-bottom: 5px;
+      transition: .3s all ease-in-out;
+      align-items: center;
+      margin-right: 8px;
+    }
+  }
+
+  @media all and (max-width: 325px) {
+    .products__element {
+      box-shadow: 5px 5px 20px rgb(0, 0, 0);
+      border-radius: 20px;
+      background: var(--main-catalog-bg);
+      padding-bottom: 5px;
+      transition: .3s all ease-in-out;
+      align-items: center;
+      margin-right: 50px;
+    }
+    .products__element--btn {
+      width: 150px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      height: 40px ;
+    }
+  }
